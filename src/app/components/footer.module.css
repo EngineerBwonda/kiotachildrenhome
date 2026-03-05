@@ -1,0 +1,175 @@
+.footer {
+  background-color: #ac9e9e;
+  padding: 3rem 0 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08); /* subtle depth */
+}
+
+.footer h2 {
+  color: #862929;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer p {
+  color: #3b2a2a;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Social Icons */
+.socialIcon {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.15) translateY(-3px);
+  filter: drop-shadow(0 4px 8px rgba(134, 41, 41, 0.3));
+}
+
+/* Quick Links */
+.linkHover {
+  color: #3b2a2a;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+  font-weight: 500;
+}
+
+.linkHover:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.linkUnderline {
+  position: relative;
+}
+
+.linkUnderline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #862929;
+  transition: width 0.4s ease;
+}
+
+.linkUnderline:hover::after {
+  width: 100%;
+}
+
+/* Copyright */
+.footerText {
+  color: #3b1515;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Map polish */
+.mapWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* .footer {
+  background-color: #ac9e9e;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #862929;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer a {
+  color: #0070f3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #202325;
+}
+
+/* .pic {
+  background-color: #af5454;
+} */
+
+/* .list-group {
+  background-color: #0051b3;
+}
+
+.linkHover {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.linkHover:hover {
+  color: #e9ecef;
+}
+
+.linkActive {
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.linkUnderline {
+  position: relative;
+}
+
+.linkUnderline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+
+  background-color: rgb(20, 18, 18);
+  transition: width 0.3s ease;
+}
+
+.linkUnderline:hover::after {
+  width: 100%;
+}
+
+.socialIcon {
+  transition: transform 0.2s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+  color: #0070f3;
+}
+
+.linkSize {
+  font-size: 1.2rem;
+}
+.footerText {
+  color: #3b1515;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+} */

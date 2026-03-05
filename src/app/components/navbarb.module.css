@@ -1,0 +1,41 @@
+.offcanvasBody {
+  background-color: #eef0ef !important; /* Bootstrap success color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.offcanvasHeader {
+  background-color: #198754;
+  color: white;
+  padding: 1rem;
+}
+
+.navLink {
+  color: white !important;
+  font-size: 1.2rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.donateButton {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.donateButton:hover {
+  background-color: white;
+  color: #198754;
+}

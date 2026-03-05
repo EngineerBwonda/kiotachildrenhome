@@ -1,0 +1,93 @@
+.socialCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.socialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.whatsappCard {
+  border-left: 5px solid #25d366;
+}
+
+.facebookCard {
+  border-left: 5px solid #1877f2;
+}
+
+.gmailCard {
+  border-left: 5px solid #ea4335;
+}
+
+.cardImage {
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.socialCard:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.header {
+  position: relative;
+  padding: 1rem 0;
+  /* background: linear-gradient(135deg, #198754 0%, #115c39 100%); */
+  color: rgb(10, 7, 7);
+  margin-bottom: 0rem;
+}
+
+.headerTitle {
+  animation: fadeInDown 1s ease-out;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.headerTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: white;
+  animation: expandWidth 1s ease-out forwards;
+}
+
+.headerText {
+  animation: fadeIn 1s ease-out;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
