@@ -22,10 +22,10 @@ export default function ContactPage() {
               <h1
                 className={`display-4 mb-4 ${styles.headerTitle} fw-bolder text-success`}
               >
-                WELCOME TO KIOTA CHILDREN'S HOME
+                WELCOME TO KIOTA CHILDRENS HOME
               </h1>
               <p className={`${styles.headerText} fw-bolder`}>
-                Reach out to us and make a difference in a child's life
+                Reach out to us and make a difference in a childs life
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
       <div className="container text-center header">
         <div className="row">
           <div className="col display-5 m-4 fw-bolder">
-            WELCOME TO KIOTA CHILDREN'S HOME CONTACT PAGE
+            WELCOME TO KIOTA CHILDRENS HOME CONTACT PAGE
           </div>
         </div>
       </div>
