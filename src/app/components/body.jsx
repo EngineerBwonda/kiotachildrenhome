@@ -265,7 +265,7 @@ export default function Body() {
                 <p className={style.needDescription}>
                   Nutritious meals for growing children
                 </p>
-                <Link href="/getinvolved" className={style.needButton}>
+                <Link href="/donate" className={style.needButton}>
                   Donate Now
                 </Link>
               </div>
@@ -277,7 +277,7 @@ export default function Body() {
                 <p className={style.needDescription}>
                   Books, uniforms, and school supplies
                 </p>
-                <Link href="/getinvolved" className={style.needButton}>
+                <Link href="/donate" className={style.needButton}>
                   Donate Now
                 </Link>
               </div>
@@ -289,7 +289,7 @@ export default function Body() {
                 <p className={style.needDescription}>
                   Healthcare and medicine for all children
                 </p>
-                <Link href="/getinvolved" className={style.needButton}>
+                <Link href="/donate" className={style.needButton}>
                   Donate Now
                 </Link>
               </div>
