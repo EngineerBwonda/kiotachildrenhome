@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo Section - Controlled entirely by CSS now */}
           <Link
             className={`${styles.logoLink} d-flex align-items-center`}
-            href="/homepage"
+            href="/"
           >
             <Image
               src="/logo2.png"
