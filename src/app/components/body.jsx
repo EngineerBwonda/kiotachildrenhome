@@ -235,9 +235,9 @@ export default function Body() {
             <div className={`col-12 col-md-6 ${style.storyText}`}>
               <h5 className={style.storyTitle}>A Story of Hope</h5>
               <p className={style.storyDescription}>
-                "When 8-year-old Emmanuel arrived at Kiota Children's Home, he
-                had never attended school. Today, he's top of his class and
-                dreams of becoming a doctor. Your support makes stories like his
+                "When Emmanuel arrived at Kiota Children's Home, he had never
+                attended school. Today, he's top of his class and dreams of
+                becoming a doctor. Your support makes stories like his
                 possible."
               </p>
               <p className={style.storyCredit}>— Sarah, Program Director</p>

@@ -538,11 +538,11 @@ export default function GetInvolvedPage() {
               </div>
             </div>
           </div>
-          <div className="text-center mt-5">
+          {/* <div className="text-center mt-5">
             <button className="btn btn-outline-success btn-lg rounded-pill px-5">
               View All Children
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

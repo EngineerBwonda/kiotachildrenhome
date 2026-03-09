@@ -21,11 +21,13 @@ export default function ContactPage() {
             <div className="col">
               <h1
                 className={`display-4 mb-4 ${styles.headerTitle} fw-bolder text-success`}
+                tabIndex="0"
+                aria-label="Welcome to Kiota Children's Home"
               >
-                WELCOME TO KIOTA CHILDRENS HOME
+                WELCOME TO KIOTA CHILDREN'S HOME
               </h1>
-              <p className={`${styles.headerText} fw-bolder`}>
-                Reach out to us and make a difference in a childs life
+              <p className={`${styles.headerText} fw-bolder`} tabIndex="0">
+                Reach out to us and make a difference in a child's life
               </p>
             </div>
           </div>
@@ -84,13 +86,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="container text-center header">
-        <div className="row">
-          <div className="col display-5 m-4 fw-bolder">
-            WELCOME TO KIOTA CHILDRENS HOME CONTACT PAGE
-          </div>
-        </div>
-      </div>
+      {/* Removed duplicate header for clarity */}
 
       <div className="container h-3">
         <div className="row row-cols-1 row-cols-md-2 g-4">
