@@ -65,7 +65,7 @@ export default function Carousel() {
               href="/getinvolved"
               className={`btn btn-primary ${styles.donatebtn}`}
             >
-              Support Education
+              Make a Difference
             </a>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Carousel() {
               href="/getinvolved"
               className={`btn btn-primary ${styles.donatebtn}`}
             >
-              Make a Difference
+              Support Education
             </a>
           </div>
         </div>
