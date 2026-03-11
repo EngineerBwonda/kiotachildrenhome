@@ -5,10 +5,28 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Carousel from "../components/carousel";
 import FloatingButton from "../components/floatingButton";
+import Head from "next/head";
 
 export default function DonatePage() {
   return (
     <>
+      <Head>
+        <title>Get Involved | Kiota Children's Home</title>
+        <meta
+          name="description"
+          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
+        />
+        <meta
+          property="og:title"
+          content="Get Involved | Kiota Children's Home"
+        />
+        <meta
+          property="og:description"
+          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/getinvolved" />
+      </Head>
       <NavbarB />
 
       {/* Hero Section - Emotional Impact */}
@@ -207,16 +225,14 @@ export default function DonatePage() {
                     <div className="col-5 text-muted fw-semibold">
                       Bank Name:
                     </div>
-                    <div className="col-7 fw-bold text-dark">
-                      Kenya Commercial Bank (KCB)
-                    </div>
+                    <div className="col-7 fw-bold text-dark">Equity Bank</div>
                   </div>
                   <div className="row mb-3">
                     <div className="col-5 text-muted fw-semibold">
                       Account Name:
                     </div>
                     <div className="col-7 fw-bold text-dark">
-                      Makimei Children's Home
+                      Kiota Foundation
                     </div>
                   </div>
                   <div className="row mb-3">
@@ -225,14 +241,8 @@ export default function DonatePage() {
                     </div>
                     <div className="col-7 fw-bold text-dark">
                       <span className="badge bg-success fs-6 p-2">
-                        1234 5678 901
+                        1440282479492
                       </span>
-                    </div>
-                  </div>
-                  <div className="row mb-0">
-                    <div className="col-5 text-muted fw-semibold">Branch:</div>
-                    <div className="col-7 fw-bold text-dark">
-                      Nairobi - Karen Branch
                     </div>
                   </div>
                 </div>
@@ -241,7 +251,7 @@ export default function DonatePage() {
                   className="mt-4 p-3 rounded-3"
                   style={{ backgroundColor: "#e8f5e9" }}
                 >
-                  <p className="mb-0 text-dark small">
+                  {/* <p className="mb-0 text-dark small">
                     <strong>💡 Tip:</strong> After making a transfer, please
                     email the receipt to
                     <a
@@ -252,7 +262,7 @@ export default function DonatePage() {
                       contact@kiota.com
                     </a>
                     for acknowledgment and tax deduction purposes.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -289,7 +299,7 @@ export default function DonatePage() {
                   <div className="text-center mb-4">
                     <div className="mb-3">
                       <span className="badge bg-success fs-4 px-4 py-2">
-                        TILL NUMBER: 123 456
+                        TILL NUMBER: 479492
                       </span>
                     </div>
                     <p className="text-muted mb-0">Paybill Number</p>
@@ -311,10 +321,10 @@ export default function DonatePage() {
                       Choose <strong>Paybill</strong>
                     </li>
                     <li className="mb-2">
-                      Enter Business Number: <strong>123 456</strong>
+                      Enter Business Number: <strong>247247</strong>
                     </li>
                     <li className="mb-2">
-                      Enter Account Number: <strong>Donation</strong>
+                      Enter Account Number: <strong>479492</strong>
                     </li>
                     <li className="mb-2">Enter amount and confirm</li>
                   </ol>
@@ -426,21 +436,21 @@ export default function DonatePage() {
                 </p>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
                   <a
-                    href="tel:+254123456789"
+                    href="tel:+254 714 292 148"
                     className="btn btn-success btn-lg px-4 py-2"
                     style={{ borderRadius: "50px" }}
                   >
-                    📞 Call: +254 123 456 789
+                    📞 Call: +254 714 292 148
                   </a>
                   <a
                     href="mailto:contact@kiota.com"
                     className="btn btn-outline-success btn-lg px-4 py-2"
                     style={{ borderRadius: "50px" }}
                   >
-                    ✉️ Email: contact@kiota.com
+                    ✉️ Email: Kiotafoundationkenya@gmail.com
                   </a>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/+254714292148"
                     className="btn btn-success btn-lg px-4 py-2"
                     style={{ borderRadius: "50px", backgroundColor: "#25D366" }}
                     target="_blank"

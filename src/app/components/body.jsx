@@ -2,10 +2,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import style from "../homepage/homepage.module.css";
+import Head from "next/head";
 
 export default function Body() {
   return (
     <>
+      <Head>
+        <title>Get Involved | Kiota Children's Home</title>
+        <meta
+          name="description"
+          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
+        />
+        <meta
+          property="og:title"
+          content="Get Involved | Kiota Children's Home"
+        />
+        <meta
+          property="og:description"
+          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/getinvolved" />
+      </Head>
       {/* Welcome Section */}
       <div className={`container-fluid ${style.welcomeSection}`}>
         <div className="container mt-0">
@@ -240,7 +258,9 @@ export default function Body() {
                 becoming a doctor. Your support makes stories like his
                 possible."
               </p>
-              <p className={style.storyCredit}>— Sarah, Program Director</p>
+              <p className={style.storyCredit}>
+                — Apostle Dorcas Wanjiru,Director
+              </p>
               <Link href="/about" className={style.ctaButton}>
                 Read More Stories
               </Link>

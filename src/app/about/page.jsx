@@ -2,13 +2,80 @@
 import React from "react";
 import Footer from "../components/footer";
 import Image from "next/image";
+import Head from "next/head";
 import Map from "../components/map";
 import NavbarB from "../components/navbar";
 import Carousel from "../components/carousel";
 import FloatingButton from "../components/floatingButton";
+import styles from "./style.module.css";
+import Link from "next/link";
 export default function About() {
+  const sections = [
+    {
+      title: "Our Vision",
+      src: "/vision.jpeg",
+      alt: "Children thriving in a safe, loving and nurturing environment",
+      isCircle: true,
+      text: "To be a leading children's home in Kenya, providing a safe, loving and nurturing environment for abandoned and orphaned children, ensuring they have access to education, healthcare, and opportunities for personal growth.",
+    },
+    {
+      title: "Our Mission",
+      src: "/mission2.jpeg",
+      alt: "Happy children receiving care and love at our home",
+      isCircle: false,
+      text: "We provide a home for abandoned and orphaned children, ensuring a future where they are safe, loved and learning.",
+    },
+    {
+      title: "Our Aim",
+      src: "/aim2.svg",
+      alt: "Supporting street children, orphans and vulnerable children",
+      isCircle: false,
+      text: "Supporting street children, orphans and vulnerable children through sheltering, feeding, mentoring, educating, clothing and providing medical care.",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      name: "Apostle Dorcas",
+      role: "Director",
+      src: "/apostle dorcas.jpeg",
+      alt: "Apostle Dorcas - Director of the children's home",
+    },
+    {
+      name: "Rebecca Ngumi",
+      role: "Deputy Director",
+      src: "/deputy director c.png",
+      alt: "Rebecca Ngumi - Deputy Director",
+    },
+    {
+      name: "Rose",
+      role: "Teacher",
+      src: "/rose.jpeg",
+      alt: "Rose - Teacher at the children's home",
+    },
+    {
+      name: "Antony",
+      role: "Caretaker & Security",
+      src: "/caretaker.jpeg",
+      alt: "Antony - Caretaker and Security",
+    },
+  ];
   return (
     <>
+      <Head>
+        <title>About | Kiota Children's Home</title>
+        <meta
+          name="description"
+          content="Learn more about Kiota Children's Home, our mission, vision, and the impact we make in the community."
+        />
+        <meta property="og:title" content="About | Kiota Children's Home" />
+        <meta
+          property="og:description"
+          content="Learn more about Kiota Children's Home, our mission, vision, and the impact we make in the community."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/about" />
+      </Head>
       <NavbarB></NavbarB>
       <Carousel></Carousel>
       <div className="container ">
@@ -64,82 +131,80 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container text-center">
-        <div className="row row-cols-1 row-cols-md-3 g-4 m-3">
-          <div className="col mb-3">
-            <div className="card h-100">
-              <div className="card-img-container p-3">
+
+      <div className={`container-fluid ${styles.storySection}`}>
+        <div className="container">
+          <div className={`row ${styles.storyContent}`}>
+            <div className={`col-12 col-md-5 ${styles.storyImageContainer}`}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: "420px",
+                  borderRadius: "18px",
+                  overflow: "hidden",
+                  boxShadow: "0 8px 32px rgba(56,142,60,0.12)",
+                }}
+              >
                 <Image
-                  src="/vision.jpeg"
-                  alt="Child A"
-                  width={200}
-                  height={200}
-                  className="card-img-top rounded-circle img-fluid"
+                  src="/apostle dorcas.jpeg"
+                  alt="Child's success story"
+                  fill
+                  className={styles.storyImage}
+                  style={{ objectFit: "cover", borderRadius: "18px" }}
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  priority
                 />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title text-success fw-bolder fs-1">
-                  Our Vision
-                </h5>
-                <p className="card-text fs-5">
-                  To be a leading children&apos;s home in Kenya, providing a
-                  safe, loving and nurturing environment for abandoned and
-                  orphaned children, ensuring they have access to education,
-                  healthcare, and opportunities for personal growth.
-                </p>
               </div>
             </div>
-          </div>
-          <div className="col mb-3">
-            <div className="card h-100">
-              <div className="card-img-container p-3">
-                <Image
-                  src="/mission2.jpeg"
-                  alt="Child A"
-                  width={200}
-                  height={200}
-                  className="card-img-top  img-fluid"
-                />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title text-success fw-bolder fs-1">
-                  Our Mission
-                </h5>
-                <p className="card-text fs-5">
-                  We provide a home for abandoned and orphaned children ensuring
-                  a future where they are safe, loved and learning We provide a
-                  home for abandoned and orphaned children ensuring a future
-                  where they are safe, loved and learning.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col mb-3">
-            <div className="card h-100">
-              <div className="card-img-container p-3">
-                <Image
-                  src="/aim2.svg"
-                  alt="Child A"
-                  width={200}
-                  height={400}
-                  className="card-img-top  img-fluid"
-                />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title text-success fw-bolder fs-1 ">
-                  Our Aim
-                </h5>
-                <p className="card-text fs-5">
-                  We provide a home for abandoned and orphaned children ensuring
-                  a future where they are safe, loved and learning We provide a
-                  home for abandoned and orphaned children ensuring a future
-                  where they are safe, loved and learning.
-                </p>
-              </div>
+            <div className={`col-12 col-md-6 ${styles.storyText}`}>
+              <h5 className={styles.storyTitle}>Message From The Director</h5>
+              <p className={styles.storyDescription}>
+                "At Kiota Children's Home, every child is given the chance to
+                dream, learn, and grow in a loving family. We believe that with
+                care, guidance, and opportunity, each child can overcome their
+                past and build a bright future. Thank you for being part of our
+                journey and for helping us nurture tomorrow’s leaders."
+              </p>
+              <p className={styles.storyCredit}>
+                — Apostle Dorcas Wanjiru,Director
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div className="container text-center">
+        <div className="row row-cols-1 row-cols-md-3 g-4 m-3">
+          {sections.map((item, index) => (
+            <div className="col mb-3" key={index}>
+              <div className={`${styles.card} card h-100`}>
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={280}
+                    height={380}
+                    className={`${styles.image} ${item.isCircle ? styles.circle : ""}`}
+                    style={{ objectFit: item.isCircle ? "cover" : "contain" }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    priority={index === 0}
+                  />
+                </div>
+                <div className="card-body">
+                  <h5
+                    className={`${styles.title} card-title text-success fw-bolder fs-1`}
+                  >
+                    {item.title}
+                  </h5>
+                  <p className="card-text fs-5">{item.text}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="container py-5">
         <div className="row row-cols-1 row-cols-lg-2 g-5 align-items-center">
           {/* Image Column – clean, balanced, and modern presentation */}
@@ -326,94 +391,67 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="container text-center">
-          <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-3">
-            <div className="card">
-              <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={300}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Founder</h5>
-                <p className="card-text">Apostle Dorcas</p>
-              </div>
-            </div>
 
-            <div className="card">
-              <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={200}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Teacher </h5>
-                <p className="card-text">Mercy</p>
+        <div className="container text-center py-5">
+          <div className="row row-cols-1 row-cols-md-2 g-4 m-3">
+            {teamMembers.map((member, index) => (
+              <div className="col" key={index}>
+                <div className={`${styles.card} card h-100`}>
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={member.src}
+                      alt={member.alt}
+                      width={360}
+                      height={460}
+                      className={styles.image}
+                      style={{ objectFit: "fill" }}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="card-body text-center pt-4">
+                    <h5 className={`${styles.role} text-success fw-bold`}>
+                      {member.role}
+                    </h5>
+                    <h4 className={styles.name}>{member.name}</h4>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
-            <div className="card">
+      <div className={`container-fluid ${styles.storySection}`}>
+        <div className="container">
+          <div className={`row ${styles.storyContent}`}>
+            <div className={`col-12 col-md-5 ${styles.storyImageContainer}`}>
               <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={200}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Assistant Director </h5>
-                <p className="card-text">Name of the person</p>
-              </div>
+                src="/g4.jpeg"
+                alt="Child's success story"
+                width={400}
+                height={350}
+                className={styles.storyImage}
+              />
             </div>
-
-            <div className="card">
-              <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={200}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Security</h5>
-                <p className="card-text">Holders Name</p>
-              </div>
-            </div>
-
-            <div className="card">
-              <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={200}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Volunteer</h5>
-                <p className="card-text">Holders Name</p>
-              </div>
-            </div>
-
-            <div className="card">
-              <Image
-                src="/childB.jpg"
-                alt="Child A"
-                width={200}
-                height={300}
-                className="card-img-top"
-              />{" "}
-              <div className="card-body">
-                <h5 className="card-title">Volunteer</h5>
-                <p className="card-text">Holders Name</p>
-              </div>
+            <div className={`col-12 col-md-6 ${styles.storyText}`}>
+              <h5 className={styles.storyTitle}>A Story of Hope</h5>
+              <p className={styles.storyDescription}>
+                "When Emmanuel arrived at Kiota Children's Home, he had never
+                attended school. Today, he's top of his class and dreams of
+                becoming a doctor. Your support makes stories like his
+                possible."
+              </p>
+              <p className={styles.storyCredit}>
+                — Apostle Dorcas Wanjiru,Director
+              </p>
+              <Link href="/about" className={styles.ctaButton}>
+                Read More Stories
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
       <div className="container my-5">
         <div className="row">
           <div className="col-12">
