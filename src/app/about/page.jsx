@@ -421,37 +421,6 @@ export default function About() {
         </div>
       </div>
 
-      <div className={`container-fluid ${styles.storySection}`}>
-        <div className="container">
-          <div className={`row ${styles.storyContent}`}>
-            <div className={`col-12 col-md-5 ${styles.storyImageContainer}`}>
-              <Image
-                src="/g4.jpeg"
-                alt="Child's success story"
-                width={400}
-                height={350}
-                className={styles.storyImage}
-              />
-            </div>
-            <div className={`col-12 col-md-6 ${styles.storyText}`}>
-              <h5 className={styles.storyTitle}>A Story of Hope</h5>
-              <p className={styles.storyDescription}>
-                "When Emmanuel arrived at Kiota Children's Home, he had never
-                attended school. Today, he's top of his class and dreams of
-                becoming a doctor. Your support makes stories like his
-                possible."
-              </p>
-              <p className={styles.storyCredit}>
-                — Apostle Dorcas Wanjiru,Director
-              </p>
-              <Link href="/about" className={styles.ctaButton}>
-                Read More Stories
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="container my-5">
         <div className="row">
           <div className="col-12">
