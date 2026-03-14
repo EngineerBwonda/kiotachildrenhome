@@ -225,20 +225,7 @@ export default function Donate() {
                 <div
                   className="mt-4 p-3 rounded-3"
                   style={{ backgroundColor: "#e8f5e9" }}
-                >
-                  {/* <p className="mb-0 text-dark small">
-                            <strong>💡 Tip:</strong> After making a transfer, please
-                            email the receipt to
-                            <a
-                              href="mailto:contact@kiota.com"
-                              className="text-success fw-bold"
-                            >
-                              {" "}
-                              contact@kiota.com
-                            </a>
-                            for acknowledgment and tax deduction purposes.
-                          </p> */}
-                </div>
+                ></div>
               </div>
             </div>
           </div>

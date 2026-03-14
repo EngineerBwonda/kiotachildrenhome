@@ -4,28 +4,69 @@ import Footer from "./components/footer";
 import Vidplayerb from "./components/vidplayerb";
 import FloatingButton from "./components/floatingButton";
 import Navbar from "./components/navbar";
-import Head from "next/head";
+// Static metadata export for Home page
+export const metadata = {
+  metadataBase: new URL("https://kiotafoundation.org"),
+  title: {
+    default: "Home | Kiota Children's Home",
+    template: "%s | Kiota Children's Home",
+  },
+  description:
+    "Kiota Children's Home in Kenya provides a safe, loving, and nurturing environment for abandoned and orphaned children. Learn more about our mission, vision, and how you can help.",
+  keywords: [
+    "Kiota Children's Home",
+    "children's home Kenya",
+    "charity",
+    "orphans",
+    "support children",
+    "donate",
+    "volunteer",
+    "Kenya",
+    "foundation",
+    "mission",
+    "vision",
+  ],
+  alternates: {
+    canonical: "https://kiotafoundation.org/",
+    languages: {
+      "en-US": "https://kiotafoundation.org/en-US/",
+      "sw-KE": "https://kiotafoundation.org/sw-KE/",
+    },
+  },
+  openGraph: {
+    title: "Home | Kiota Children's Home",
+    description:
+      "Kiota Children's Home in Kenya provides a safe, loving, and nurturing environment for abandoned and orphaned children.",
+    url: "https://kiotafoundation.org/",
+    siteName: "Kiota Children's Home",
+    images: [{ url: "https://kiotafoundation.org/images/home-cover.jpg" }],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home | Kiota Children's Home",
+    description:
+      "Kiota Children's Home in Kenya provides a safe, loving, and nurturing environment for abandoned and orphaned children.",
+    site: "@KiotaChildrensHome",
+    creator: "@KiotaChildrensHome",
+    images: ["https://kiotafoundation.org/images/home-cover.jpg"],
+  },
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Get Involved | Kiota Children's Home</title>
-        <meta
-          name="description"
-          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
-        />
-        <meta
-          property="og:title"
-          content="Get Involved | Kiota Children's Home"
-        />
-        <meta
-          property="og:description"
-          content="Join Kiota Children's Home and make a difference. Learn how to sponsor, volunteer, donate, or partner to help children in need."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/getinvolved" />
-      </Head>
       <Navbar />
       <Carousel />
       <Body />
