@@ -12,7 +12,7 @@ import AboutUsPage from "../components/aboutUs";
 
 // Static metadata export for About page
 export const metadata = {
-  metadataBase: new URL("https://kiotafoundation.org"),
+  metadataBase: new URL("https://www.kiotafoundation.org"),
   title: {
     default: "About Us | Kiota Foundation",
     template: "%s | Kiota Children's Home",
@@ -33,17 +33,17 @@ export const metadata = {
     "Kenya",
   ],
   alternates: {
-    canonical: "https://kiotafoundation.org/about",
+    canonical: "https://www.kiotafoundation.org/about",
     languages: {
-      "en-US": "https://kiotafoundation.org/en-US/about",
-      "sw-KE": "https://kiotafoundation.org/sw-KE/about",
+      "en-US": "https://www.kiotafoundation.org/en-US/about",
+      "sw-KE": "https://www.kiotafoundation.org/sw-KE/about",
     },
   },
   openGraph: {
     title: "About Us | Kiota Children's Home",
     description:
       "Learn about Kiota Children's Home, our vision, mission, and the team dedicated to supporting children in Kenya.",
-    url: "https://kiotafoundation.org/about",
+    url: "https://www.kiotafoundation.org/about",
     siteName: "Kiota Children's Home",
     images: [
       { url: "/vision.jpeg" },
@@ -101,7 +101,10 @@ export default function About() {
           content="Learn more about Kiota Children's Home, our mission, vision, and the impact we make in the community."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/about" />
+        <meta
+          property="og:url"
+          content="https://www.kiotafoundation.org/about"
+        />
       </Head>
       <NavbarB></NavbarB>
       <Carousel></Carousel>
