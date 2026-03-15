@@ -14,7 +14,7 @@ import AboutUsPage from "../components/aboutUs";
 export const metadata = {
   metadataBase: new URL("https://kiotafoundation.org"),
   title: {
-    default: "About Us | Kiota Children's Home",
+    default: "About Us | Kiota Foundation",
     template: "%s | Kiota Children's Home",
   },
   description:

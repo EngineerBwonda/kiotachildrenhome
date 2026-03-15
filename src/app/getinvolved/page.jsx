@@ -11,8 +11,8 @@ import GetInvolved from "../components/getinvolved";
 export const metadata = {
   metadataBase: new URL("https://kiotafoundation.org"),
   title: {
-    default: "Get Involved | Kiota Children's Home",
-    template: "%s | Kiota Children's Home",
+    default: "Get Involved | Kiota Foundation",
+    template: "%s | Kiota Foundation",
   },
   description:
     "Learn how to get involved with Kiota Children's Home. Sponsor, volunteer, donate, or partner to help children in need in Kenya.",

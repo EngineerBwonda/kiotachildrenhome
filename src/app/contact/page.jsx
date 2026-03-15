@@ -13,8 +13,8 @@ import Contact from "../components/contact";
 export const metadata = {
   metadataBase: new URL("https://kiotafoundation.org"),
   title: {
-    default: "Contact | Kiota Children's Home",
-    template: "%s | Kiota Children's Home",
+    default: "Contact | Kiota Foundation",
+    template: "%s | Kiota Foundation",
   },
   description:
     "Contact Kiota Children's Home. Reach out to us and make a difference in a child's life. Address, phone, email, and social links.",

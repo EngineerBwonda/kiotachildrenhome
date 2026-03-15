@@ -6,7 +6,7 @@ import FloatingButton from "./components/floatingButton";
 import Navbar from "./components/navbar";
 // Static metadata export for Home page
 export const metadata = {
-  metadataBase: new URL("https://kiotafoundation.org"),
+  metadataBase: new URL("https://www.kiotafoundation.org"),
   title: {
     default: "Home | Kiota Children's Home",
     template: "%s | Kiota Children's Home",
@@ -27,19 +27,19 @@ export const metadata = {
     "vision",
   ],
   alternates: {
-    canonical: "https://kiotafoundation.org/",
+    canonical: "https://www.kiotafoundation.org/",
     languages: {
-      "en-US": "https://kiotafoundation.org/en-US/",
-      "sw-KE": "https://kiotafoundation.org/sw-KE/",
+      "en-US": "https://www.kiotafoundation.org/en-US/",
+      "sw-KE": "https://www.kiotafoundation.org/sw-KE/",
     },
   },
   openGraph: {
     title: "Home | Kiota Children's Home",
     description:
       "Kiota Children's Home in Kenya provides a safe, loving, and nurturing environment for abandoned and orphaned children.",
-    url: "https://kiotafoundation.org/",
+    url: "https://www.kiotafoundation.org/",
     siteName: "Kiota Children's Home",
-    images: [{ url: "https://kiotafoundation.org/images/home-cover.jpg" }],
+    images: [{ url: "https://www.kiotafoundation.org/images/home-cover.jpg" }],
   },
   robots: {
     index: true,
@@ -60,7 +60,7 @@ export const metadata = {
       "Kiota Children's Home in Kenya provides a safe, loving, and nurturing environment for abandoned and orphaned children.",
     site: "@KiotaChildrensHome",
     creator: "@KiotaChildrensHome",
-    images: ["https://kiotafoundation.org/images/home-cover.jpg"],
+    images: ["https://www.kiotafoundation.org/images/home-cover.jpg"],
   },
 };
 
