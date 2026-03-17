@@ -12,7 +12,7 @@ import Gallery from "../components/gallery";
 // Static metadata export in a layout or page:
 // Correct Next.js metadata export
 export const metadata = {
-  metadataBase: new URL("https://kiotafoundation.org"),
+  metadataBase: new URL("https://www.kiotafoundation.org"),
   title: {
     default: "Gallery | Kiota Children's Home",
     template: "%s | Kiota Children's Home",
@@ -38,21 +38,21 @@ export const metadata = {
     "impact",
   ],
   alternates: {
-    canonical: "https://kiotafoundation.org/gallery",
+    canonical: "https://www.kiotafoundation.org/gallery",
     languages: {
-      "en-US": "https://kiotafoundation.org/en-US/gallery",
-      "sw-KE": "https://kiotafoundation.org/sw-KE/gallery",
+      "en-US": "https://www.kiotafoundation.org/en-US/gallery",
+      "sw-KE": "https://www.kiotafoundation.org/sw-KE/gallery",
     },
   },
   openGraph: {
     title: "Gallery | Kiota Children's Home",
     description:
       "See the lives changed at Kiota Children's Home. Our gallery showcases the children, staff, and supporters who make our mission possible.",
-    url: "https://kiotafoundation.org/gallery",
+    url: "https://www.kiotafoundation.org/gallery",
     siteName: "Kiota Children's Home",
     images: [
-      { url: "https://kiotafoundation.org/images/gallery-cover.jpg" },
-      { url: "https://kiotafoundation.org/images/children-smiling.jpg" },
+      { url: "https://www.kiotafoundation.org/images/gallery-cover.jpg" },
+      { url: "https://www.kiotafoundation.org/images/children-smiling.jpg" },
     ],
   },
   robots: {
@@ -75,8 +75,8 @@ export const metadata = {
     site: "@KiotaChildrensHome",
     creator: "@KiotaChildrensHome",
     images: [
-      "https://kiotafoundation.org/images/gallery-cover.jpg",
-      "https://kiotafoundation.org/images/children-smiling.jpg",
+      "https://www.kiotafoundation.org/images/gallery-cover.jpg",
+      "https://www.kiotafoundation.org/images/children-smiling.jpg",
     ],
   },
 };

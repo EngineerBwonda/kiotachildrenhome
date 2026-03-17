@@ -65,30 +65,23 @@ export default function AboutUsPage() {
             </h2>
 
             <p className="text-dark mt-3 fs-5  ">
-              Makimei Children&apos;s Home was founded in response to the
-              pressing need for assistance to orphans and vulnerable children.
+              Kiota Children&apos;s Home was founded in response to the pressing
+              need for assistance to orphans and vulnerable children.
             </p>
             <p className="text-dark fs-5">
-              The home was established in 2005 by a group of dedicated
+              The home was established in 2018 by a group of dedicated
               individuals who recognized the challenges faced by children in
               need. Their vision was to create a safe and nurturing environment
               where these children could thrive.
             </p>
 
             <p className="text-dark fs-5">
-              Our journey began when we welcomed our first child, Rachael, who
-              is now a director of our home. Soon after, we had two children
-              from the local community whose parents succumbed to the HIV/AID
-              epidemic, and then a baby who was anonymously abandoned at our
-              door.
-            </p>
-
-            <p className="text-dark fs-5">
-              Today, we have over 100 children in our care all of whom call
-              Makimei their home. We are driven by a commitment to replace
-              suffering with love. With open hearts and a vision for our
-              children&apos;s future, we provide a loving and stable home for
-              all children who join the Makimei family circle.
+              Our journey began when we welcomed our first child.Today, we have
+              over 100 children in our care all of whom call Kiota their home.
+              We are driven by a commitment to replace suffering with love. With
+              open hearts and a vision for our children&apos;s future, we
+              provide a loving and stable home for all children who join the
+              Makimei family circle.
             </p>
           </div>
           <div className="col ">
