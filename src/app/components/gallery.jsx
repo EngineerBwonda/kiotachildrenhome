@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import VidPlayer from "./videoplayerC";
 
 export default function Gallery() {
   return (
@@ -132,7 +133,7 @@ export default function Gallery() {
           <div className="col">
             <div className="card">
               <Image
-                src="/childA.jpg"
+                src="/new2.jpeg"
                 alt="Child "
                 width={200}
                 height={300}
@@ -144,7 +145,7 @@ export default function Gallery() {
           <div className="col">
             <div className="card">
               <Image
-                src="/childB.jpg"
+                src="/new1.jpeg"
                 alt="Child C"
                 width={200}
                 height={300}
@@ -152,7 +153,7 @@ export default function Gallery() {
               />
             </div>
           </div>
-
+          {/* 
           <div className="col">
             <div className="card">
               <Image
@@ -163,9 +164,10 @@ export default function Gallery() {
                 className="card-img-top"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+      <VidPlayer></VidPlayer>
     </>
   );
 }

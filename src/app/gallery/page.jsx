@@ -108,7 +108,7 @@ export default function GalleryPage() {
 
       <FloatingButton></FloatingButton>
 
-      <Playerb />
+      {/* <Playerb /> */}
 
       <Footer />
     </>
